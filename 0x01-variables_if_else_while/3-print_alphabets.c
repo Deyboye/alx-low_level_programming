@@ -20,6 +20,7 @@ int main(void)
 		(d <= 'z') {
 			putchar (d);
 			d++;
+		}
 	putchar('\n');
 	return (0);
 }
