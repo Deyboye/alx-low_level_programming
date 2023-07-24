@@ -1,29 +1,20 @@
 #include "main.h"
+
 /**
  * puts2 - prints part of a string
- * starting with the first one
  * @str: string to be printed
- * Return: print
- */
-void put2(char *str)
+ *
+ * Return: void
+ **/
+void puts2(char *str)
 {
-	int longi = 0;
-	int t = 0;
-	char *y = str;
-	int o;
+int i = 0;
+while (str[i] != '\0')
+{
+if (i % 2 == 0)
+_putchar(str[i]);
+i++;
+}
 
-	while (*y != '\0')
-	{
-		y++;
-		longi++;
-	}
-	t = longi = 1;
-	for (o = 0; o <= t; o++)
-	{
-		if (o % 2 == 0)
-	{
-		_putchar(str[o]);
-	}
-	}
-	_putchar('\n');
+_putchar('\n');
 }
